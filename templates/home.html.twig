@@ -1,0 +1,18 @@
+
+{% extends 'base.html.twig'%}
+
+{% block body %}
+            <h1>HOLA COMO ESTAS </h1>
+
+            <div>
+               {{form(form)}}
+            </div>
+          
+            <div>
+
+               {% for comment in DA %}
+                      <p>{{comment.body}}</p>
+               {% endfor %}
+            
+            </div>
+{% endblock %}
